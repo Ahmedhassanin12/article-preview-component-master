@@ -1,0 +1,240 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.grid {
+  width: 85rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3rem;
+  background-color: white;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.61);
+  border-radius: 1.5rem;
+}  
+.img-box img {
+  max-width: 34rem;
+  height: 30rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.text-box {
+  padding-right: 2rem;
+  position: relative;
+}
+.text-box h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  opacity: .7;
+}
+.text-box p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.507);
+}
+.small-box {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2.5rem;
+  position: relative;
+}
+.small-box img {
+  width: 5rem;
+  border-radius: 50%;
+}
+.small-box p {
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.493);
+  font-size: 1.6rem;
+}
+.small-box svg {
+  display: block;
+  padding-left: .8rem;
+  padding-top: .8rem;
+  background-color: hsl(212, 23%, 69%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 5rem;
+  bottom: 2rem;
+}
+.ahmed {
+  background-color: #48556a;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  width: 30rem;
+  color: white;
+  padding: 2rem 2.5rem;
+  border-radius: 1.4rem;
+  position: absolute;
+  right: -4rem;
+  bottom: 8rem;
+}
+.ahmed::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid#48556a ;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    bottom: -1.4rem;
+    right: 11rem;
+}
+.ahmed h4 {
+  font-size: 1.3rem;
+  color:hsl(214, 17%, 51%);
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+}
+.hidden {
+  display: none;
+}
+
+@media (max-width:767px) {
+ .container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.grid {
+  width: 34rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  background-color: white;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.61);
+  border-radius: 1.5rem;
+}  
+.img-box img {
+  max-width: 34rem;
+  height: 30rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.text-box {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: relative;
+}
+.text-box h1 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  opacity: .6;
+}
+.text-box p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.507);
+}
+.small-box {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.small-box img {
+  width: 4rem;
+  border-radius: 50%;
+}
+.small-box p {
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.493);
+  font-size: 1.2rem;
+}
+.small-box svg {
+  
+  background-color: hsl(212, 23%, 69%);
+  position: absolute;
+  right: 4rem;
+  bottom: 0rem;
+  z-index: 2;
+}
+.ahmed {
+  background-color: #48556a;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  width: 100%;
+  color: white;
+  padding: 2rem 2.5rem;
+  border-radius: 1.4rem;
+  position: absolute;
+  right: 0rem;
+  bottom: 0rem;
+  z-index: 1;
+}
+.ahmed::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid#48556a ;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    bottom: 0rem;
+    right: 01rem;
+}
+
+.ahmed h4 {
+  font-size: 1.3rem;
+  color:hsl(214, 17%, 51%);
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+}
+.hidden {
+  display: none;
+}
+}
